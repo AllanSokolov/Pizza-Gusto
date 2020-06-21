@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 body {
     background-color: #363333;
 }
@@ -6,6 +10,11 @@ body {
 .topnav {
     background-color: #333;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .topnav .navbar-brand {
+    font-family: 'Dancing Script', cursive;
   }
   
   /* Style the links inside the navigation bar */
