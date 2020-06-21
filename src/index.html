@@ -15,11 +15,31 @@
         <!-- Bootstrap core CSS -->
         <link href="../lib/bootstrap.min.css" rel="stylesheet">
 
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- Custom CSS -->
         <link href="style.css" rel="stylesheet">
 
     </head>
     <body>
+
+        <!--Navigation bar -->
+        <div class="topnav" id="myTopnav">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bootstrap
+            </a>
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <!--Navigation bar end-->
+
         
         <!-- JS for Bootstrap -->
         <script src="../lib/jquery-slim.min.js"></script>
