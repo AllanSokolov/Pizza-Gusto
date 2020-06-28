@@ -161,5 +161,16 @@ body {
     }
   } 
 
+/* Newsletter card */
+.card {
+  height: 240px;
+}
+
+.newsletter-card {
+  background-image: url("../src/img/newsletter_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #272121;
+}
 
   
