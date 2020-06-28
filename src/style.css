@@ -199,3 +199,11 @@ body {
   margin-bottom: 15px;
 }
 
+.offers-slide img {
+  height: 500px;
+}
+
+.carousel-caption {
+  color: red;
+  font-weight: bold;
+}
