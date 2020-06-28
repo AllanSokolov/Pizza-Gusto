@@ -68,12 +68,14 @@ body {
     }
   }
 
-  /* Video */
+  /* Video details*/
   video {
     width: 100%;
-    height: 400px;
+    height: auto;
   }
 
-.container-fluid{
-  min-width: 100%;
-}
+  @media (max-width: 660px ) {
+    video {
+      display: none;
+    }
+  } 
