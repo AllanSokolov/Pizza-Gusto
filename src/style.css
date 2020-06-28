@@ -173,6 +173,10 @@ body {
   color: #272121;
 }
 
+.newsletter-card .card-body {
+  padding: 15px 30px;
+}
+
 .reservation-order-card {
   background-image: url("../src/img/pizza-delivery.jpg");
   background-repeat: no-repeat;
