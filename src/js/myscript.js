@@ -7,3 +7,11 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+$(document).ready(function () {
+
+  $('.icon').on('click', function () {
+
+    $('.animated-icon').toggleClass('open');
+  });
+});
