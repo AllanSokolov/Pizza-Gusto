@@ -149,14 +149,14 @@ body {
     left: 50%;
     }
     
-
-  /* Video */
+  /* Video details*/
   video {
     width: 100%;
+    height: auto;
   }
 
-  /*
-  .container-fluid{
-    max-width: 100%;
-  }*/
-
+  @media (max-width: 660px ) {
+    video {
+      display: none;
+    }
+  } 
