@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+body, html {
+  height: 100%;
+}
+
 body {
     background-color: #363333;
 }
@@ -246,4 +250,21 @@ body {
 .app {
   width: 135px;
   height: 68px;
+}
+
+/* Parallax */
+.parallax {
+  background-image: url("../src/img/pizza-parallax.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 660px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
