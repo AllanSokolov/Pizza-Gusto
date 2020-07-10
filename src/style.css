@@ -8,6 +8,7 @@ body, html {
 
 body {
     background-color: #363333;
+    color: #f2f2f2;
 }
 
 /* Add a black background color to the top navigation */
@@ -207,19 +208,38 @@ body {
   height: 500px;
 }
 
-/* Social media*/
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+/* Social media section*/
+.follow-us {
+  color: #f2f2f2;
+  margin: 25px 35px;
 }
 
-.fa:hover {
+.social-buttons {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.social-buttons li {
+  float: left;
+}
+
+.social-buttons li a {
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.social-buttons .fa:hover {
   opacity: 0.7;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 2px 4px rgba(240, 236, 236, 0.9), 0 4px 4px 0 rgba(240, 236, 236, 0.8);
+  background-color: #EFC050;
+  color: #363333;
 }
 
 .fa-facebook {
@@ -242,14 +262,20 @@ body {
   color: white;
 }
 
-#follow-us {
-  color: #f2f2f2;
-  margin: 35px;
+.app-buttons {
+  padding: 0 40px;
 }
 
 .app {
   width: 135px;
-  height: 68px;
+  height: 60px;
+}
+
+.pizza-slice img {
+  width: 90%;
+  height: 280px;
+  margin-top: 45px;
+  margin-left: 15px;
 }
 
 /* Parallax */
@@ -267,4 +293,90 @@ body {
   .parallax {
     background-attachment: scroll;
   }
+}
+
+/* Awards and press */
+.awards-section {
+  padding: 15px;
+}
+
+.awards-section h2 {
+  margin: 15px 20px;
+}
+
+.ul-awards {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.ul-awards li {
+  padding: 10px 5px;
+}
+
+.ul-awards img {
+  width: 50px;
+  height: 50px;
+}
+
+.press {
+  margin-top: 25px;
+  padding: 15px 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: larger;
+}
+
+/* Footer */
+footer {
+  background-color: #272121;
+}
+
+footer a {
+  color: #f2f2f2;
+}
+
+footer a:hover {
+  color: #EFC050;
+  text-decoration: none;
+}
+
+.social-footer .fa {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 5px 10px;
+  box-shadow: 0 2px 4px 2px #363333;
+}
+
+.social-footer .fa:hover {
+  opacity: 0.7;
+  box-shadow: 0 2px 6px 2px rgba(240, 236, 236, 0.9);
+  background-color: #EFC050;
+  color: #363333;
+}
+
+/* Scroll to top button */
+#toTopBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: #555;  
+  color: #f2f2f2; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 20px;
+  transition: all .30s ease-in-out; 
+}
+
+#toTopBtn:hover {
+  background-color: #EFC050; 
+  color: #363333;
 }
