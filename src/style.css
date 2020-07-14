@@ -233,11 +233,11 @@ body {
   font-size: 30px;
   border-radius: 50%;
   margin: 0 5px;
+  transition: all .30s ease-in-out; 
 }
 
 .social-buttons .fa:hover {
   opacity: 0.7;
-  box-shadow: 0 2px 2px 4px rgba(240, 236, 236, 0.9), 0 4px 4px 0 rgba(240, 236, 236, 0.8);
   background-color: #EFC050;
   color: #363333;
 }
@@ -349,6 +349,7 @@ footer a:hover {
   border-radius: 50%;
   margin: 5px 10px;
   box-shadow: 0 2px 4px 2px #363333;
+  transition: all .30s ease-in-out; 
 }
 
 .social-footer .fa:hover {
@@ -474,4 +475,55 @@ ul.timeline > li:before {
 
 #picture2{
   filter: contrast(200%);
+
+/*Terms and Conditions page*/
+.terms {
+  padding: 20px;
+}
+
+.terms h2, h3 {
+  margin: 25px 15px;
+}
+
+.last-updated {
+  margin: 15px;
+  font-weight: 400;
+  color: #ddd;
+}
+
+.terms p {
+  margin: 15px;
+  text-align: justify;
+}
+
+/*Privacy Policy page*/
+.privacy-policy {
+  padding: 20px;
+}
+
+.privacy-policy h2, h3 {
+  margin: 25px 15px;
+}
+
+.privacy-policy p {
+  margin: 15px;
+  text-align: justify;
+}
+
+/*Cookie policy page*/
+.cookie-policy {
+  padding: 20px;
+}
+
+.cookie-policy h2, h3 {
+  margin: 25px 15px;
+}
+
+.cookie-policy h4 {
+  margin: 25px 15px;
+}
+
+.cookie-policy p {
+  margin: 15px;
+  text-align: justify;
 }
