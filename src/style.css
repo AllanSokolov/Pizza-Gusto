@@ -412,10 +412,26 @@ footer a:hover {
   color: #EFC050;
 }
 
+/* Main */
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 25px 20px;
+}
+
+.main h2, h3, h4 {
+  margin: 25px 15px;
+}
+
+.main p {
+  margin: 15px;
+  text-align: justify;
+}
+
+.last-updated {
+  margin: 15px;
+  font-weight: 400;
+  color: #ddd;
 }
 
 @media screen and (max-height: 450px) {
@@ -475,55 +491,4 @@ ul.timeline > li:before {
 
 #picture2{
   filter: contrast(200%);
-
-/*Terms and Conditions page*/
-.terms {
-  padding: 20px;
-}
-
-.terms h2, h3 {
-  margin: 25px 15px;
-}
-
-.last-updated {
-  margin: 15px;
-  font-weight: 400;
-  color: #ddd;
-}
-
-.terms p {
-  margin: 15px;
-  text-align: justify;
-}
-
-/*Privacy Policy page*/
-.privacy-policy {
-  padding: 20px;
-}
-
-.privacy-policy h2, h3 {
-  margin: 25px 15px;
-}
-
-.privacy-policy p {
-  margin: 15px;
-  text-align: justify;
-}
-
-/*Cookie policy page*/
-.cookie-policy {
-  padding: 20px;
-}
-
-.cookie-policy h2, h3 {
-  margin: 25px 15px;
-}
-
-.cookie-policy h4 {
-  margin: 25px 15px;
-}
-
-.cookie-policy p {
-  margin: 15px;
-  text-align: justify;
 }
