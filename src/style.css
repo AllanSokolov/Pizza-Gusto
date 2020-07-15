@@ -492,3 +492,15 @@ ul.timeline > li:before {
 #picture2{
   filter: contrast(200%);
 }
+
+/* Contact page */
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+.address-content {
+  padding: 20px;
+  font-size: 18px;
+}

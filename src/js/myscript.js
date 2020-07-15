@@ -36,3 +36,23 @@ function scrollToTop()
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox and Opera
 }
+
+//Maps
+function initMap() {
+
+  console.log("initmap started");
+
+  var myLatLng = {lat: 41.9284868, lng: 12.4838443};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Pizza Gusto'
+  });
+
+};
