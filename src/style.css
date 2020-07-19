@@ -504,3 +504,75 @@ ul.timeline > li:before {
   padding: 20px;
   font-size: 18px;
 }
+
+/* Webmaster page */
+.webmaster-contact p{
+  text-align: center;
+  font-size: 18px;
+}
+
+/* FAQ page */
+.faq-nav {
+    flex-direction: column;
+    margin: 0 0 32px;
+    border-radius: 2px;    
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+    
+.nav-link {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 13px 16px;
+        background-color: #fff;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0;
+        color: #616161;
+        transition: background-color .2s ease;
+}
+
+.nav-pills .nav-link.active {
+	color: #EFC050;
+	background-color: #272121;
+}
+
+
+
+/* Tab content */
+.tab-content {
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+
+.accordion .panel-default > .panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+
+.accordion .panel-default .panel-title a {
+    display: block;
+    font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.accordion .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+.accordion .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+
+.accordion .panel-default .panel-body {
+    font-size: 1.2rem;
+	background: #f4f4f4;
+	color: #363333;
+	padding: 10px;
+}
