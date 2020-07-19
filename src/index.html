@@ -73,6 +73,8 @@
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!--Cookie-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
         <!-- Custom CSS -->
         <link href="style.css" rel="stylesheet">
 
@@ -97,16 +99,18 @@
         <!--Navigation bar end-->
 
         <!--Video content-->
-        <section>
+        <header>
+          <div class="overlay"></div>   <!--Add overlay effect to the video-->
             <video class="video" playsinline autoplay muted loop>
                 <source src="video/placing-pizza-in-wood-fired-oven.mp4" type="video/mp4">
                 <source src="video/placing-pizza-in-wood-fired-oven.ogg" type="video/ogg">
             </video>
-        </section>
+        </header>
         <!--Video content end-->
 
         
         <!-- Reservation&order, newsletter-->
+        <br>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
@@ -201,7 +205,7 @@
                 </div>
                 <div class="col-md-4">
                   <figure class="pizza-slice">
-                    <img src="img/pizza-slice.png" alt="pizza slice">
+                    <img src="img/pizza-slice-2.png" alt="pizza slice">
                   </figure>
                 </div>
               </div>                
@@ -253,6 +257,8 @@
           </div>
         </section>
         <!-- Awards and press end -->
+
+        
 
         <!-- Footer -->
         <footer class="page-footer font-small mdb-color lighten-3 pt-4">
@@ -316,17 +322,17 @@
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Become an Affiliate</a>
+                      <a href="affiliate.html">Become an Affiliate</a>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Advertise</a>
+                      <a href="advertise.html">Advertise</a>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Work with us</a>
+                      <a href="work.html">Work with us</a>
                     </p>
                   </li>
                   <li>
@@ -414,12 +420,18 @@
         </footer>
         <!-- Footer end -->
 
+
         <!-- JS for Bootstrap -->
         <script src="../lib/jquery-slim.min.js"></script>
         <script src="../lib/popper.min.js"></script>
         <script src="../lib/bootstrap.min.js"></script>
 
+         <!--Cookie JS-->
+         <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+        </script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#EFC050","text":"#ffffff"}},"position":"bottom-right"})});</script>
+
         <!-- Custom JS -->
         <script src="js/myscript.js"></script>
+
     </body>
 </html>

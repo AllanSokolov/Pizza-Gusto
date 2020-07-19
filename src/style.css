@@ -1,6 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
 
 body, html {
   height: 100%;
@@ -160,11 +161,51 @@ body {
     height: auto;
   }
 
-  @media (max-width: 660px ) {
+  header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  /*@media (max-width: 660px ) {
     video {
       display: none;
     }
-  } 
+  } */
 
 /* Newsletter, Reserverion & Order card*/
 .card {
@@ -272,8 +313,10 @@ body {
 }
 
 .pizza-slice img {
-  width: 90%;
-  height: 280px;
+  /*height: 280px;
+  width: 90%;*/
+  width: 100%;
+  height: 400px;
   margin-top: 45px;
   margin-left: 15px;
 }
@@ -477,12 +520,18 @@ ul.timeline > li:before {
 .about-picture {
   width: 180px; 
   height: 180px;
-  border: 1px solid #ddd;
+  /* border: 3px solid #ccc;
+  background: #eee; */ 
   border-radius: 4px;
   padding: 5px;
   position: relative;
-  left: 200px;
-  top: 60px;
+ /* left: 200px;
+  top: 60px; */
+}
+
+div.picture-center {
+  text-align: center;
+  padding: 40px 20px;
 }
 
 #picture1{
@@ -491,6 +540,17 @@ ul.timeline > li:before {
 
 #picture2{
   filter: contrast(200%);
+}
+
+.timeline p {
+  margin-right: 25px;
+  text-align: justify;
+  
+}
+
+.contact-button {
+  text-align: center;
+  margin: 50px;
 }
 
 /* Contact page */
@@ -576,3 +636,108 @@ ul.timeline > li:before {
 	color: #363333;
 	padding: 10px;
 }
+/* 404 page */
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('img/empty-plate.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rowdies{
+  font-family: 'Rowdies', cursive;
+  font-size: 150px;
+  color: black;
+}
+  
+.lead {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Affiliate */
+.hero-image-affiliate {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/Affiliate.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #EFC050;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.content {padding:20px;}
+
+.card-deck {
+  color: #363333;
+}
+
+/* Advertise */
+.hero-image-advertise {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/advertise.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.content {padding:20px;}
+
+/* Work with us */
+.hero-image-work {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/work.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.content {padding:20px;}
+
