@@ -82,41 +82,44 @@
         <!--Sign up form-->
         <div class="container">
             <div class="login-form">
-            <div class="main-div">
-                <div class="panel">
-                    <h2>Login</h2>
-                    <p>Please enter your email and password</p>
-                 </div>
-                <form id="Login">
-            
-                    <div class="form-group">
-            
-            
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
-            
-                    </div>
-            
-                    <div class="form-group">
-            
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-            
-                    </div>
-                    <div class="forgot">
-                    <a href="help.html">Forgot password?</a>
-                   
-                    </div>
-                    <div class="checkbox panel">
-                        <p><input type="checkbox"> Remember me</p>
-                    </div>
+              <div class="main-div">
+                  <div class="panel">
+                      <h2>Login</h2>
+                      <p>Please enter your email and password</p>
+                  </div>
+                  <form id="Login">
+              
+                      <div class="form-group">
+              
+              
+                          <input type="email" class="form-control" id="emailAffSignin" name="emailAffSignin" placeholder="Email Address" required
+                          pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" title="Please enter a valid Email ID">
+              
+                      </div>
+              
+                      <div class="form-group">
+              
+                          <input type="password" class="form-control" id="pwdAffSignin" name="pwdAffSignin" placeholder="Password" required
+                          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+                        title="Must contain at least one number one uppercase and lowercase letter, and at least 6 or more characters">
+              
+                      </div>
+                      <div class="forgot">
+                      <a href="help.html">Forgot password?</a>
+                    
+                      </div>
+                      <div class="checkbox panel">
+                          <p><input type="checkbox"> Remember me</p>
+                      </div>
 
-                    <button type="submit" class="btn btn-warning">Sign in</button>
+                      <button type="submit" class="btn btn-warning">Sign in</button>
+                      
                     
-                   
-                    
-                </form>
-                </div>
-            
-            
+                      
+                  </form>
+                  </div>
+              </div>
+        </div>
             
         <!--Sign up and end-->
         

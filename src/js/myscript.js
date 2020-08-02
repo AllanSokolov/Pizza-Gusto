@@ -158,3 +158,38 @@ jQuery(function ($) {
   }
 });
 
+// Sign up form
+function regValidation() {
+	var email = document.signupForm.email;
+	var name = document.signupForm.fullName;
+	var pass1 = document.signupForm.pwd1;
+	var pass2 = document.signupForm.pwd2;
+	var phone = document.signupForm.phone;
+	var birth = document.signupForm.birthDate;
+	var country = document.signupForm.country;
+	var city = document.signupForm.city;
+	var zip = document.signupForm.zip;
+	var addr = document.signupForm.address;
+	var nameCreditCard = document.signupForm.nameCard;
+	var ccnumber = document.signupForm.cardNumber;
+	var cvv = document.signupForm.cvv;
+
+	if( document.signupForm.country.value == "notset" ) {
+		alert( "Please select your country!" );
+		document.signupForm.country.focus();
+        return false;
+    }
+
+	alert('Signed up successfully!')
+	window.location.reload()
+	return true;
+}
+
+ $('#pwd1, #pwd2').on('keyup', function () {
+	if ($('#pwd1').val() == $('#pwd2').val()) {
+	  $('#pwd2').html('Matching').css('color', 'green');
+	} else 
+	  $('#pwd2').html('Not Matching').css('color', 'red');
+});
+
+
