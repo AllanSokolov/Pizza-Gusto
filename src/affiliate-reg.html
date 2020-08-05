@@ -87,36 +87,40 @@
                <h2>Create account</h2>
                <br>
                </div>
-                <form id="Login">
-            
-                    
+                <form id="regAffiliate" name="regAffiliate" onsubmit="return regAffValidate();" method="POST">
+                 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="inputFName" placeholder="First name" required>
+                        <input type="text" class="form-control" id="fNameAff" name="fNameAff" placeholder="First name" 
+                        pattern="[\p{Lu}'][ \p{L}'-]*[\p{L}]$" 
+                        title="Please enter your first name" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="inputLName" placeholder="Last name" required>
+                        <input type="text" class="form-control" id="lNameAff" name="lNameAff" placeholder="Last name" 
+                        pattern="[\p{Lu}'][ \p{L}'-]*[\p{L}]$" 
+                        title="Please enter your last name" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" required
-                        pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" title="Please enter a valid Email ID">
+                        <input type="email" class="form-control" id="emailAff" name="emailAff" placeholder="Email Address" 
+                        pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" 
+                        title="Please enter a valid Email ID" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="text"  class="form-control"  id="ccnum" name="cardnumber" placeholder="Credit card number"
+                        <input type="text"  class="form-control"  id="ccnumAff" name="ccnumAff" placeholder="Credit card number" minlength="13" maxlength="16"
                         pattern="[0-9]{13,16}$" 
                         title="Length must be between 13 and 16 and must contain only numbers" required>
                     </div>
             
                     <div class="form-group">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password"
+                        <input type="password" class="form-control" id="pwdAff" name="pwdAff" placeholder="Password" required
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
-                        title="Must contain at least one number one uppercase and lowercase letter, and at least 6 or more characters">>
+                        title="Password must contain at least one number one uppercase and lowercase letter, and at least 6 or more characters">>
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password again"
+                        <input type="password" class="form-control" id="pwdAffConfirm" name="pwdAffConfirm" placeholder="Password again" required
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
                         title="Password must be the same">
                     </div>
@@ -126,7 +130,7 @@
                     
                     <br><br>
                     <div class="panel">
-                        <p>By creating an account, you agree <a href="privacy-policy.html">our policy</a></p>
+                        <p>By creating an account, you agree <a href="privacy-policy.html" target="_blank">our policy</a></p>
                      </div>
                      <div class="panel">
                         <p>Already have an account? <a href="affiliate-sign-in.html">Sign in</a></p>
@@ -140,6 +144,7 @@
                             <img src="icons/paypal.png" alt="paypal">
                             <img src="icons/american-express.png" alt="american express">
                      </div>
+                     <small class="form-text pt-3 text-center"><a href="index.html">Go to homepage</a></small>
                      
                 </form>
                 </div>

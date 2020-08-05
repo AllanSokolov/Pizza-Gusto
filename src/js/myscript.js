@@ -162,8 +162,8 @@ jQuery(function ($) {
 function regValidation() {
 	var email = document.signupForm.email;
 	var name = document.signupForm.fullName;
-	var pass1 = document.signupForm.pwd1;
-	var pass2 = document.signupForm.pwd2;
+	var pass = document.signupForm.pwd;
+	var passConfirm = document.signupForm.pwdConfirm;
 	var phone = document.signupForm.phone;
 	var birth = document.signupForm.birthDate;
 	var country = document.signupForm.country;
@@ -185,11 +185,30 @@ function regValidation() {
 	return true;
 }
 
- $('#pwd1, #pwd2').on('keyup', function () {
-	if ($('#pwd1').val() == $('#pwd2').val()) {
-	  $('#pwd2').html('Matching').css('color', 'green');
+$('#pwd, #pwdConfirm').on('keyup', function () {
+	if ($('#pwd').val() == $('#pwdConfirm').val()) {
+	  $('#pwdConfirm').html('Matching').css('color', 'green');
 	} else 
-	  $('#pwd2').html('Not Matching').css('color', 'red');
+	  $('#pwdConfirm').html('Not Matching').css('color', 'red');
 });
 
+// Affiliate sign up form
+function regAffValidate() {
+	var fNameAff = document.regAffiliate.fNameAff;
+	var lNameAff = document.regAffiliate.lNameAff;
+	var emailAff = document.regAffiliate.emailAff;
+	var passAff = document.regAffiliate.pwdAff;
+	var passConfirmAff = document.regAffiliate.pwdAffConfirm;
+	var ccnumberAff = document.regAffiliate.ccnumAff;
 
+	alert('Signed up successfully!')
+	window.location.reload()
+	return true;
+}
+
+$('#pwdAff, #pwdAffConfirm').on('keyup', function () {
+	if ($('#pwdAff').val() == $('#pwdAffConfirm').val()) {
+	  $('#pwdAffConfirm').html('Matching').css('color', 'green');
+	} else 
+	  $('#pwdAffConfirm').html('Not Matching').css('color', 'red');
+});
