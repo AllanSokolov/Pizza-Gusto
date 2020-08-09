@@ -442,10 +442,6 @@ footer a:hover {
   padding-top: 20px;
 }
 
-.sidenav a.active {
-  color: #EFC050;
-}
-
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -455,15 +451,35 @@ footer a:hover {
   display: block;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .navbar a:hover {
+  color: #EFC050;
+}
+
+.sidenav a.active, .navbar a.active {
   color: #EFC050;
 }
 
 /* Navbar for useful infos */
-.navbar-dark {
+.navbar {
   background-color: #272121;
 }
 
+.navbar a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #818181;
+}
+
+.navbar-toggler:hover {
+  border-color: #e3f2fd;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
 
 /* Main */
 .main {
@@ -481,7 +497,7 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
   .main {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 
@@ -717,18 +733,6 @@ div.picture-center {
 }
 
 .content {padding:20px;}
-
-.card-deck {
-  color: #363333;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: .5rem;
-}
-
-.card .card-text {
-  text-align: left;
-}
-
 
 /* Advertise */
 .hero-image-advertise {
