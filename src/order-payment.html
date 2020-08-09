@@ -96,29 +96,73 @@
           </div>
         <!--Navigation bar end-->
 
-        <!--Reservation&Order split screen image-->
-        
+        <!--Reservation&Order-->
+        <br><br>
      
-         
-          <div class="row no-gutters">
-            <div class="col-md-6 no-gutters">
-                <div class="leftside d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div class="login-form">
+            <div class="main-div">
+        <div class="progress col-sm-12 col-md-6">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+            
+            <div>
+                <br>
+                <ul class="list-group col-sm-12 col-md-6">
+                <li class="list-group-item success-green">Delivery</li>
+                <li class="list-group-item success-green">Registration</li>
+                <li class="list-group-item success-green">From where?</li>
+                <li class="list-group-item success-green">Menu</li>
+                <li class="list-group-item">
+                    <h2 class="order-text">Payment</h2>
+                    <p class="order-text">You can pay with currency or crypto currency or QR code by an application.</p>
+                    
+                    <div class="row">
+                        <div class="radio order-text">
+                            <label><input type="radio" name="optradio" checked>Card</label>
+                        </div>
+                        <div class="radio order-text">
+                            <label><input type="radio" name="optradio">Cash</label>
+                        </div>
+                    </div>
 
-                  <a href="order.html"><button type="button" class="btn btn-warning btn-lg order-btn">Order</button></a>
+                    <div class="form-group  col-sm-12 col-md-6">
+                        <label for="city"></label>
+                            <select id="city" name="city" class="form-control" required>
+                              <option value="notset" selected>Select currency...</option>
+                              <option value="dollar">Dollar</option>
+                              <option value="euro">Euro</option>
+                              <option value="bitcoin">Bitcoin</option>      
+                              <option value="ethereum">Ethereum</option>
+                              <option value="litecoin">Litecoin</option>
+                            </select>
+                    </div>
 
-                </div>
-            </div>
-            <div class="col-md-6 no-gutters">
-                <div class="rightside d-flex justify-content-center align-items-center">
-
-                  <a href="reservation.html"><button type="button" class="btn btn-warning btn-lg reservation-btn">Reservation</button></a>
-
-                </div>
-            </div>
+                    <div class="panel">
+                            <img src="icons/american-express.png" alt="american express">
+                            <img src="icons/mastercard.png" alt="mastercard">
+                            <img src="icons/visa.png" alt="visa">
+                            <img src="icons/paypal.png" alt="paypal">
+                            <img src="icons/discover.png" alt="discover">
+                    </div>
+                    <br>
+                    <a href="order-compliance.html"><button type="button" class="btn btn-lg btn-warning">Next</button></a>
+                </li>
+                <li class="list-group-item disabled">Compliance</li>
+                <li class="list-group-item disabled">Approve</li>
+            </ul>
           </div>
-
-        
-        <!--Reservation&Order split screen image end-->
+            <br>
+            <button type="button" class="btn btn-lg btn-primary" disabled>Order</button>
+            <small class="order-text">Before you order. You have to fill in the forms.</small>
+        <br><br>
+        <p class="order-text">Would you like visit our restaurant?</p>
+        <a href="reservation.html"><button type="button" class="btn btn-warning">Reservation</button></a>
+         </div>
+         </div>
+         </div>
+        <br><br>
+        <!--Reservation&Order end-->
       
 
         <!-- Footer -->

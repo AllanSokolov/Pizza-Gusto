@@ -79,81 +79,9 @@
     </head>
     <body>
 
-        <!--Sign up form-->
-        <div class="container">
-            <div class="login-form">
-            <div class="main-div">
-                <div class="panel">
-               <h2>Create account</h2>
-               <br>
-               </div>
-                <form id="regAffiliate" name="regAffiliate" onsubmit="return regAffValidate();" method="POST">
-                 
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="fNameAff" name="fNameAff" placeholder="First name" 
-                        pattern="[\p{Lu}'][ \p{L}'-]*[\p{L}]$" 
-                        title="Please enter your first name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="lNameAff" name="lNameAff" placeholder="Last name" 
-                        pattern="[\p{Lu}'][ \p{L}'-]*[\p{L}]$" 
-                        title="Please enter your last name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="emailAff" name="emailAff" placeholder="Email Address" 
-                        pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" 
-                        title="Please enter a valid Email ID" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text"  class="form-control"  id="ccnumAff" name="ccnumAff" placeholder="Credit card number" minlength="13" maxlength="16"
-                        pattern="[0-9]{13,16}$" 
-                        title="Length must be between 13 and 16 and must contain only numbers" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="pwdAff" name="pwdAff" placeholder="Password" required
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
-                        title="Password must contain at least one number one uppercase and lowercase letter, and at least 6 or more characters">>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="pwdAffConfirm" name="pwdAffConfirm" placeholder="Password again" required
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
-                        title="Password must be the same">
-                    </div>
-                 
-                    <br>
-                    <button type="submit" class="btn btn-warning">Sign up</button>
-                    
-                    <br><br>
-                    <div class="panel">
-                        <p>By creating an account, you agree <a href="privacy-policy.html" target="_blank">our policy</a></p>
-                     </div>
-                     <div class="panel">
-                        <p>Already have an account? <a href="affiliate-sign-in.html">Sign in</a></p>
-                     </div>
-                     <br>
-                     <div class="panel">
-                        <p>Accepted Cards</p>
-                            <img src="icons/american-express.png" alt="american express">
-                            <img src="icons/mastercard.png" alt="mastercard">
-                            <img src="icons/visa.png" alt="visa">
-                            <img src="icons/paypal.png" alt="paypal">
-                            <img src="icons/discover.png" alt="discover">
-                     </div>
-                     <small class="form-text pt-3 text-center"><a href="index.html">Go to homepage</a></small>
-                     
-                </form>
-                </div>
-            
-            
-            
-        <!--Sign up and end-->
-        
-     
+        <!-- Background Image -->
+        <div class="order-banner"> </div>
+        <!-- Background Image end -->
 
           <!-- JS for Bootstrap -->
         <script src="../lib/jquery-slim.min.js"></script>

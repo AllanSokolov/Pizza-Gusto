@@ -890,3 +890,56 @@ div.picture-center {
 }
 
 
+/* Reservation & Order */
+.leftside, .rightside {
+  height:100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.leftside {
+  background-image: url("../src/img/pizza-delivery.jpg");
+}
+
+.rightside{
+  background-image: url("../src/img/reservation.jpg");
+}
+
+.order-btn, .reservation-btn {
+  background: #EFC050 none repeat scroll 0 0;
+  background-color: #EFC050;
+  width: 150px;
+}
+
+/* Reservation page */
+
+.reservation-text{
+  color: #272121;
+}
+
+/* Order page */
+
+.order-text{
+  color: #272121;
+}
+
+.success-green{
+  color: green;
+}
+
+/* Menu page */
+
+.menu-btn-center{
+  text-align: center;
+}
+
+/* Order-Success page */
+
+.order-banner{
+  background-image: url("../src/img/order.jpg");
+  background-size: 60%;
+  height:100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
